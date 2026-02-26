@@ -7,9 +7,21 @@ function Statistics({ results }) {
 
   return (
     <div className="stats">
-      <span>Avg: <strong>{avg}</strong></span>
-      <span>Min: <strong className={min < 50 ? "warning" : ""}>{min}</strong></span>
-      <span>Max: <strong>{max}</strong></span>
+    <div>
+      <span className="p1">Avg: </span>
+      <span className="p2"><strong>{avg}</strong></span>
+
+    </div>
+    <div>
+      <span className="p1">Min: </span>
+      <span className="p2"><strong className={min < 50 ? "warning" : ""}>{min}</strong></span>
+
+     </div>
+    <div>
+      <span className="p1">Max:</span>
+      <span className="p2"><strong>{max}</strong></span>
+
+    </div>
     </div>
   );
 }

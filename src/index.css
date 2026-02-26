@@ -143,3 +143,11 @@ body {
 .stats .stat-value.warning {
   color: var(--secondary-color);
 }
+
+.p1{
+  font-size: 1rem;
+}
+
+.p2{
+  font-size: 2rem;
+}
