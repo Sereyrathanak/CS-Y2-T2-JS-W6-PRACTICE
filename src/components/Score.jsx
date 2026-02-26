@@ -1,3 +1,5 @@
+import Statistic from "./Statistic.jsx";
+
 function getScoreClass(score) {
   return score < 50 ? "warning" : "";
 }
@@ -26,6 +28,8 @@ function Score({ courseName, courseResults }) {
           ))}
         </tbody>
       </table>
+
+      <Statistic results={courseResults} />
     </div>
   );
 }
